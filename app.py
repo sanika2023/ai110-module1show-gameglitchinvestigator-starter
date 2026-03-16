@@ -12,6 +12,8 @@ def get_range_for_difficulty(difficulty: str):
 
 
 def parse_guess(raw: str):
+
+    #FIX ME: Logic breaks here. Input should be validated so the guess it between 1 and 100
     if raw is None:
         return False, None, "Enter a guess."
 
@@ -34,6 +36,7 @@ def check_guess(guess, secret):
         return "Win", "🎉 Correct!"
 
     try:
+        # FIX ME: Logic breaks here. The hints are swapped
         if guess > secret:
             return "Too High", "📈 Go HIGHER!"
         else:
@@ -132,6 +135,7 @@ with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
 if new_game:
+    # FIX ME: Logic breaks here. st.session_state.status is not reset and new game is not loaded
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(1, 100)
     st.success("New game started.")

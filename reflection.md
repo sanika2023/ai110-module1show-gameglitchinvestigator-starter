@@ -5,8 +5,18 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+It first loaded the initial components. It took a while to load the guessing box. The UI was clean and straightforward.
+
 - List at least two concrete bugs you noticed at the start  
-  (for example: "the hints were backwards").
+
+Bug 1: Wrong Hint
+- When I put the number 3 as my guess, the hint said to go lower. I kept going lower and reached 1 (the lower bound guess), it still said to go lower. I expected 1 to be the answer logically. The answer was actually 43. The hint was wrong.
+
+Bug 2: Unable to start new game
+- After I lost the first round, I tried to hit the new game button to play the game again. I expected this button to work since the text says "Game over. Start a new game to try again." But unfortunately, the button did not work. It says stuck in the game over phase and the game is not restarted.
+
+Bug 3: Bound checking broken
+- I entered numbers above 100 and below one, and they were still taken in as valid input. The hints still said go lower/go higher. I expected the app the tell me I made an input error. Additional input validation needs to be added.
 
 ---
 
