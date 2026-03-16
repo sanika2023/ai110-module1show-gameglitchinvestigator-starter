@@ -23,17 +23,28 @@ Bug 3: Bound checking broken
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+I mainly used copilot as suggested by the assignment directions.
+
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+One suggestion that was correct was how to fix the new game error. The AI told me how the player status was not being reset. This was actually the right reason behind the bug so it was useful. I verified by using a test case.
+
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+I did not encounter any incorrect feedback from the AI. One thing was that the AI failed to suggest other fixes to me. It failed to tell me how to optimize my code by refactoring some app.py code into logic_utils.py. I had to tell it using my own knowledge and assignment directions.
 
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+I decided this by first running the pytests and then checking manually on my browser and running the streamlit app.
+
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+One manual test I ran was to enter wrong inputs on purpose (-300, +500, etc.). I tested that the input bound was working correctly. The app caught my error, so it meant the code was successful. I also kept guessing and saw that the hints were working correctly. I also tested the new game button by clicking on it. It reset all the fields and I could play again without refreshing.
+
 - Did AI help you design or understand any tests? How?
+
+AI copilot helped to generate the pytests for this project. I asked it to make a seperate test for each bug. It was able to design and pass them successfully. I did the manual testing on my own. The manual testing confirmed that the AI tests were correct.
 
 ---
 
