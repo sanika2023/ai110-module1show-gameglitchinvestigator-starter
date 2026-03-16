@@ -52,11 +52,18 @@ AI copilot helped to generate the pytests for this project. I asked it to make a
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+Streamlit reruns mean the app code is re‑executed top‑to‑bottom every time the user interacts with the UI, so without something to “remember” values, everything would reset on each interaction. This is where session state comes in. st.session_state lets you keep track of variables like the secret number, attempt count, and game status across those reruns so the app behaves like a continuous game instead of restarting from scratch every time. I would explain this to a friend by running an app like this one.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+I think the refactoring in the agent mode was helpful. The automatic commit generation feature was also nice. I also liked the pytests. I will reuse these.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+I would share my own inights on the bugs, but I will also ask the AI for suggestions on how I can optimize the code. I won't accpet all the changes blindly though. I will make sure that they make sense.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I realized that AI generates code much better when you give it your own insights and step by step instructions. Commands like "fix this" generates wrong results sometimes. The specific prompts from this assignment caused the AI to be more helpful.
