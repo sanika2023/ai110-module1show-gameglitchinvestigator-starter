@@ -25,12 +25,15 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [X] Describe the game's purpose.
+- [X] Describe the game's purpose.  
+
 The purpose of the game is to be a fun guessing game. You are given 7 tries to guess a number between 1 and 100. You can get hints and restart the game if stuck.
-- [X] Detail which bugs you found.
+- [X] Detail which bugs you found.  
+
 I found 3 total bugs: wrong hints, unable to restart game, no input validation.
 
-- [X] Explain what fixes you applied.
+- [X] Explain what fixes you applied.  
+
 I used copilot to fix the bugs. I refactored 2 functions from app.py into logic_utils.py. I fixed the logic in the function for the hints since the logic was reversed. I reset state properly so that new game worked. I added input validation so that only correct input between 1 and 100 was accepted.
 
 ## 📸 Demo
